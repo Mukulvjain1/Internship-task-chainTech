@@ -1,0 +1,143 @@
+#container {
+  background-color: black;
+  color: white;
+}
+header {
+  width: 100%;
+}
+nav {
+  width: 100vw;
+  padding: 20px 10px;
+  border: 2px solid white;
+}
+.logo > img {
+  width: 45px;
+}
+.logo {
+  cursor: pointer;
+}
+.logo > h1 {
+  color: white;
+}
+ul > li {
+  margin: 0 10px;
+  list-style: none;
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+ul > li:hover {
+  color: #00ffa7;
+}
+main {
+  width: 100%;
+}
+#heroSection {
+  width: 70%;
+  height: 80vh;
+  /* border: 2px solid; */
+  /* gap: 20px; */
+}
+#heroSection > h2 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+.grad {
+  background: linear-gradient(to right, #ffff00, #00ffa7);
+  background-clip: text;
+  color: transparent;
+}
+#heroSection > p {
+  font-size: 16px;
+  text-align: center;
+  width: 70%;
+}
+button {
+  margin: 20px 0;
+  color: black;
+  gap: 5px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+}
+button > i {
+  color: black;
+  font-size: 20px;
+  transition: ease 0.5s all;
+}
+button:hover .icon {
+  transform: translateX(10px);
+}
+button:hover {
+  font-weight: 700;
+}
+#services {
+  color: #000;
+}
+.services-title-part2 {
+  width: 10%;
+}
+.services-title-part2 > i:hover {
+  color: white;
+}
+#navArrow {
+  border: 2px solid black;
+  /* padding: 5px; */
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+#navArrow:hover {
+  background: #000;
+  color: white;
+}
+#navArrow .right:hover {
+  transform: translateX(3px);
+  transition: all 0.3s ease;
+}
+#navArrow .left:hover {
+  transform: translateX(-3px);
+  transition: all 0.3s ease;
+}
+article {
+  border: 2px solid black;
+  height: 20em;
+  width: 25vw;
+  border-radius: 15px;
+}
+.widget {
+  background-color: #000;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  background-image: url("assets/logosection.png");
+  background-position: center;
+  background-size: 12px 15px;
+  background-repeat: no-repeat;
+}
+.services-content-title{
+    gap: 10px;
+}
+.services-content-title>p{
+    font-size: 15px;
+}
+@media (min-width: 900px) {
+  #heroSection > h2 {
+    font-size: 5vw;
+  }
+  article {
+    width: 18vw;
+  }
+}
+@media (max-width: 700px) {
+  .menu {
+    display: block;
+  }
+}
