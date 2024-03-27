@@ -14,14 +14,19 @@
       rel="stylesheet"
     />
     <title>Chaintech</title>
+    <!-- i actually didn't read that this could be made using css frameworks or else this would be more clean than this  -->
   </head>
   <body>
+    <!-- to wrap up all the cod in a container used a div -->
     <div id="main" class="flex-center flex-col">
       <section id="container" class="flex-center flex-col">
+        <!-- header section starts here  -->
         <header class="flex-center">
+          <!-- nav sec starts here  -->
           <nav class="flex-arr">
             <div class="logo flex-center">
               <img src="assets/logosection.png" />
+              <!-- took screenshot of illustration and merged with the other text to match as a logo -->
               <h1>ainTech</h1>
             </div>
             <ul class="flex-center desktop">
@@ -31,10 +36,10 @@
               <li>Blogs</li>
               <li>Contact Us</li>
             </ul>
-            <!-- <i class="ri-menu-line"></i> -->
+            <!-- for mobile devices the hamburger menu design  -->
             <i class="ri-menu-line" id="menuIcon" onclick="openSidebar()"></i>
             <ul class="sidebar">
-                <i class="ri-close-fill close" onclick="closeSideBar()"></i>
+              <i class="ri-close-fill close" onclick="closeSideBar()"></i>
               <li class="active">Company</li>
               <li>Services</li>
               <li>Buisness Models</li>
@@ -42,11 +47,17 @@
               <li>Contact Us</li>
             </ul>
           </nav>
+          <!-- nav sec ends here  -->
         </header>
+        <!-- header section ends here  -->
+
+        <!-- the main hero section starts here -->
         <main class="flex-center flex-col">
           <section class="flex-center flex-col" id="heroSection">
             <h2>Welcome</h2>
             <h2>To <span class="grad">ChainTech</span></h2>
+            <!-- used span for gradient text  -->
+
             <p>
               From square one to engineering excellence! PixelPlex assists in
               full-cycle software development, jumps in to take it over, or
@@ -54,11 +65,17 @@
             </p>
             <button class="flex-center">
               Get Started <i class="ri-arrow-right-circle-fill icon"></i>
+              <!-- added animations on hover -->
             </button>
           </section>
         </main>
       </section>
+      <!-- main section ends here  -->
+
+      <!-- page2 ie services section starts here  -->
       <section id="services">
+        <!-- the title section starts here  -->
+
         <div id="services-title" class="flex-btw">
           <div class="services-title-part1">
             <h2>Services We Offer</h2>
@@ -68,6 +85,7 @@
             </p>
           </div>
           <div class="services-title-part2 flex-btw">
+            <!-- added animation on hover -->
             <div id="navArrow" class="flex-center">
               <i class="ri-arrow-left-fill left"></i>
             </div>
@@ -76,7 +94,11 @@
             </div>
           </div>
         </div>
+
+        <!-- services card section starts here used grid for layouts   -->
         <div id="services-content" class="grid">
+          <!-- card design i have used article tag  -->
+
           <article class="flex flex-col green">
             <div class="services-content-title flex">
               <div class="flex-center widget"></div>
@@ -222,14 +244,17 @@
           </article>
         </div>
       </section>
+
       <footer class="flex-center flex-col">
         <div class="logo-footer flex-center">
           <img src="assets/logosection.png" />
+          <!-- took screenshot of illustration and merged with the other text to match as a logo -->
           <h1>ainTech</h1>
         </div>
         <p>© 2024 All Rights Reserved - Chaintech Network</p>
       </footer>
     </div>
+    <!-- script is used for providing the open and close action of the hamburger menu  -->
     <script src="index.js"></script>
   </body>
 </html>

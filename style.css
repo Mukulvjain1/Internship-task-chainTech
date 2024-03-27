@@ -1,23 +1,40 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container Styles */
 #container {
   background-color: black;
   color: white;
 }
+
+/* Header Styles */
 header {
   width: 100%;
 }
+
+/* Navigation Styles */
 nav {
   width: 100vw;
   padding: 20px 10px;
 }
+
 .logo > img {
   width: 45px;
 }
+
 .logo {
   cursor: pointer;
 }
+
 .logo > h1 {
   color: white;
 }
+
 ul > li {
   margin: 0 10px;
   list-style: none;
@@ -27,34 +44,40 @@ ul > li {
   font-weight: 600;
   font-size: 18px;
 }
+
 ul > li:hover {
   color: #00ffa7;
 }
+
+/* Main Content Styles */
 main {
   width: 100%;
 }
+
+/* Hero Section Styles */
 #heroSection {
   width: 70%;
   height: 80vh;
 }
+
 #heroSection > h2 {
   font-size: 8vw;
   text-transform: uppercase;
   text-align: center;
 }
+
 .grad {
   background: linear-gradient(to right, #ffff00, #00ffa7);
   background-clip: text;
   color: transparent;
 }
+
 #heroSection > p {
   font-size: 16px;
   text-align: center;
   width: 70%;
 }
-.services-title-part1 > p {
-  width: 100%;
-}
+
 #heroSection > button {
   margin: 20px 0;
   color: black;
@@ -64,36 +87,46 @@ main {
   border: none;
   font-weight: 600;
 }
+
 #heroSection > button > i {
   color: black;
   font-size: 20px;
   transition: ease 0.5s all;
 }
+
 #heroSection > button:hover .icon {
   transform: translateX(10px);
   background: #000;
   color: #fff;
 }
+
 #heroSection > button:hover {
   font-weight: 700;
   border: 2px white solid;
   background: #000;
   color: #fff;
 }
+
+/* Services Section Styles */
 #services {
   color: #000;
   margin: 50px 0;
-  width: 70%;
+  width: 80%;
 }
+
 #services-title {
   margin: 30px 0;
 }
+
 .services-title-part2 {
   width: 7%;
 }
+
 .services-title-part2 > i:hover {
   color: white;
 }
+
+/* Navigation Arrow Styles */
 #navArrow {
   border: 2px solid black;
   width: 30px;
@@ -102,22 +135,28 @@ main {
   transition: all 0.1s ease;
   cursor: pointer;
 }
+
 #navArrow:hover {
   background: #000;
   color: white;
 }
+
 #navArrow .right:hover {
   transform: translateX(3px);
   transition: all 0.3s ease;
 }
+
 #navArrow .left:hover {
   transform: translateX(-3px);
   transition: all 0.3s ease;
 }
+
+/* Article Styles */
 article {
   border: 2px solid black;
-  height: 25em;
-  width: 25vw;
+  height: auto;
+  width: 90%;
+  margin: 20px auto;
   border-radius: 15px;
 }
 
@@ -132,88 +171,105 @@ article {
   background-size: 12px 15px;
   background-repeat: no-repeat;
 }
+
 .services-content-title {
   gap: 10px;
   margin: 15px 8px;
   padding: 0 15px;
 }
+
 .services-content-title > p {
   font-size: 15px;
   font-weight: 600;
 }
+
 .card-content > h2 {
   font-size: 23px;
   text-align: center;
   margin: 10px 0;
   width: 100%;
 }
+
 .card-content {
   height: 80%;
   padding: 0 15px;
   border-top: 2px solid;
   border-bottom: 2px solid;
 }
-button {
+
+.btn > button {
   background-color: #fff;
   margin: 0;
   border: 2px solid black;
   height: 2.5em;
   padding: 0px 10px;
+  border-radius: 2.5rem;
 }
+
 .btn {
   height: 15%;
   padding: 0 20px;
 }
+
 .btn > button i {
   padding: 3px;
   font-size: 15px;
   border-radius: 100%;
   background: linear-gradient(to right, #ffff00, #00ffa7);
 }
+
 .btn > button:hover {
   background-color: #000;
   color: white;
 }
-button .rightArrow:hover {
-  background: #000;
-  color: white;
-  transform: translateX(3px);
-  transition: all 0.3s ease;
+button {
+  cursor: pointer;
 }
 .card-content > img {
   height: 55%;
   padding: 10px;
 }
+
 .sec span {
   display: block;
 }
+
+/* Footer Styles */
 footer {
   height: 40vh;
   background-color: #000;
   color: white;
   width: 100%;
 }
+
 .logo-footer {
   border-bottom: 2px solid rgb(153, 150, 150);
   height: 30%;
   width: 80%;
   margin: 20px;
 }
+
 .logo-footer > img {
   height: 60%;
 }
+
 .logo-footer > h1 {
   font-size: 25px;
 }
+
 footer > p {
   font-size: 12px;
 }
+
+/* Hamburger Menu Icon Styles */
 #menuIcon {
   display: none;
   cursor: pointer;
 }
+
+/* Sidebar Styles */
 .sidebar {
-    padding-top: 50px;
+  padding-top: 50px;
   display: none;
   justify-content: flex-start;
   align-items: center;
@@ -230,52 +286,70 @@ footer > p {
   right: 0;
   animation: fadeIn 0.5s ease-in-out;
 }
-.sidebar>li{
-    margin: 20px 0;
+
+.sidebar > li {
+  margin: 20px 0;
 }
-.close{
-    position: absolute;
-    font-size: 25px;
-    margin:20px;
-    right: 0;
-    top: 10px;
-    color: white;
-    transform: all ease 1s;
+
+.close {
+  position: absolute;
+  font-size: 25px;
+  margin: 20px;
+  right: 0;
+  top: 10px;
+  color: white;
+  transform: all ease 1s;
 }
-.close:hover{
-    transform: rotate(180deg);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
-#container{
-    border: 2px solid red;
+.close:hover {
+  transform: rotate(180deg);
 }
+
+/* Media Query for Responsive Design */
 @media (max-width: 768px) {
   #container {
     max-width: 100%;
   }
+
   nav > .desktop {
     display: none;
   }
+
   article {
     border: 2px solid black;
-    height: 25em;
-    width: 20vw;
+    height: auto;
+    width: 60vw;
     border-radius: 15px;
   }
+
   #menuIcon {
     display: block;
   }
   .sidebar {
     width: 100%;
   }
-  nav{
-    border: 2px dashed white;
+  nav {
     justify-content: space-between;
   }
-  #main{
+  #main {
     max-width: 100%;
   }
-  .grid{
+  .grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  #services-title {
+    flex-direction: column;
+  }
+  .services-title-part2 {
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  #navArrow {
+    margin: 0 10px;
   }
 }
 @keyframes fadeIn {
