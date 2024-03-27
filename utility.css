@@ -4,15 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-.flex{
-    display: flex;
+
+.flex {
+  display: flex;
 }
 .flex-center {
   display: flex;
@@ -40,8 +35,31 @@ li.active {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
 }
 .grid-item {
   padding: 20px;
   text-align: center;
+}
+.flex-al-btw {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.purple {
+  background-color: #2d46e65d;
+}
+.light-red {
+  background-color: #fc59598e;
+}
+.green {
+  background-color: #2bff8a94;
+}
+.blue {
+  background-color: #00eeff7e;
 }
